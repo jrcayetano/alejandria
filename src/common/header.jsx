@@ -9,7 +9,12 @@ export class HeaderApp extends React.Component {
     {label: 'Group', icon: 'pi pi-fw pi-trash'}
   ];
   render() {
-    return <Menubar model={this.items} />
+    return (
+      <header className="p-col-12">
+         <Menubar model={this.items} />
+      </header>
+     
+    )
   }
 }
 /*
